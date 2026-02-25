@@ -1,0 +1,7 @@
+# Environment and secrets (keep .env.example in repo)
+*.pyc
+__pycache__
+.venv
+venv
+config.bat
+node_modules

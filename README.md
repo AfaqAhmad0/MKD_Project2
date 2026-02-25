@@ -62,3 +62,24 @@ GET /document/{doc_id}/analysis
 POST /document/{doc_id}/resubmit
   - Allows resubmission of a revised document
 ```
+
+## Run the project
+
+From the project root:
+
+```powershell
+# Create and activate venv (first time)
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1   # Windows PowerShell
+
+# Install and run
+pip install -r requirements.txt
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+```
+
+- API: http://127.0.0.1:8000  
+- Docs: http://127.0.0.1:8000/docs  
+
+## Push to GitHub
+
+See [GITHUB_SETUP.md](GITHUB_SETUP.md) for creating a GitHub repo and pushing this code.
